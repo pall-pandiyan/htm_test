@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Dialog test</title>
+</head>
+
+<body>
+  <h1>The dialog element</h1>
+  <p>This is some text.</p>
+  <p>This is some text.</p>
+
+  <dialog id="dialog" open="open">
+    <span id="dialog_close" onclick="close_dialog(event)">
+      &nbsp;x&nbsp;
+    </span>
+    This is an open dialog window
+  </dialog>
+
+  <p>This is some text.</p>
+  <p>This is some text.</p>
+
+  <button id="btn" onclick="show_alert(event)">Alert</button>
+
+  <style>
+    #dialog_close {
+      position: absolute;
+      left: 2px;
+      top: 0;
+    }
+
+    #dialog_close:hover {
+      border: 1px solid blue;
+    }
+  </style>
+
+  <script>
+    const dialog = document.getElementById("dialog");
+
+
+    function close_dialog(event) {
+      event.preventDefault();
+      dialog.removeAttribute("open");
+    }
+
+    function show_alert(event) {
+      event.preventDefault();
+      dialog.setAttribute("open", "open");
+    }
+
+  </script>
+</body>
+
+</html>
