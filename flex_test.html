@@ -6,32 +6,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>flex sample</title>
   <style>
-    .menu {
+    .menu1 {
       display: flex;
       align-items: center;
       justify-content: center;
       background-color: black;
     }
 
-    .menu a {
+    .menu1 a {
       padding: 10px;
       color: white;
       text-decoration: none;
     }
 
-    .menu a:hover {
+    .menu1 a:hover {
       background-color: white;
       color: black;
+    }
+
+    .menu2 {
+      background-color: aquamarine;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+    }
+
+    .menu2 a {
+      color: black;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    .search {
+      display: flex;
     }
   </style>
 </head>
 
 <body>
-  <div class="menu">
-    <a href="#" id="menu-1">menu-1</a>
-    <a href="#" id="menu-2">menu-2</a>
-    <a href="#" id="menu-3">menu-3</a>
-    <a href="#" id="menu-4">menu-4</a>
+  <nav class="menu1">
+    <a href="#">menu-1</a>
+    <a href="#">menu-2</a>
+    <a href="#">menu-3</a>
+    <a href="#">menu-4</a>
+  </nav>
+
+  <br>
+  <br>
+  <br>
+
+  <nav class="menu2">
+    <div>
+      <a href="#">m</a>
+    </div>
+    <div>
+      <a href="#">menu-1</a>
+      <a href="#">menu-2</a>
+      <a href="#">menu-3</a>
+    </div>
+  </nav>
+
+  <br>
+  <br>
+  <br>
+  <div class="search">
+    <input type="text">
+    <input type="submit" value="Search">
   </div>
 </body>
 
