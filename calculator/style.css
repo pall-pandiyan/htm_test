@@ -1,0 +1,41 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.center-wrapper {
+  /* center it */
+  height: 70vh;
+  width: 50%;
+  max-width: 350px;
+  margin: 15vh auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+div.display {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+div.equal {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+div.equal > input {
+  width: 95%;
+}
+
+div.display > input {
+  width: 96.5%;
+  height: 85%;
+}
+
+input {
+  height: 90%;
+  width: 90%;
+  font-size: 150%;
+  font-weight: 400;
+}
